@@ -1,0 +1,22 @@
+name: Test
+description: Test
+
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: |
+        echo '# Hello
+        
+        ## World
+
+        :world_map: things
+
+        * things
+        * more
+
+        a | b
+        -|-
+        c | d
+
+        ' > "$GITHUB_STEP_SUMMARY"

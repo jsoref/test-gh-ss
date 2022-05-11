@@ -5,19 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: hello
-        shell: bash
-        run: |
-          echo '# Hello
-          
-          ## World
-
-          :world_map: things
-
-          * things
-          * more
-
-          a | b
-          -|-
-          c | d
-
-          ' > "$GITHUB_STEP_SUMMARY"
+        uses: ./
