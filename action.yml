@@ -8,10 +8,10 @@ runs:
       run: |
         echo GitHub
         echo "${{ toJSON(github) }}"
-        echo Context
-        echo "${{ toJSON(context) }}"
         echo Job
         echo "${{ toJSON(job) }}"
+        echo Steps
+        echo "${{ toJSON(steps) }}"
         echo Env
         env
         echo '# Hello
