@@ -6,6 +6,13 @@ runs:
   steps:
     - shell: bash
       run: |
+        echo GitHub
+        echo "${{ toJSON(github) }}"
+        echo Context
+        echo "${{ toJSON(context) }}"
+        echo Job
+        echo "${{ toJSON(job) }}"
+        echo Env
         env
         echo '# Hello
         
