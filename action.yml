@@ -6,6 +6,8 @@ runs:
   steps:
     - shell: bash
       run: |
+        echo Event Path
+        cat "$GITHUB_EVENT_PATH"
         echo GitHub
         echo "${{ toJSON(github) }}"
         echo Job
