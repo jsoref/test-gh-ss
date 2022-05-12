@@ -6,6 +6,7 @@ runs:
   steps:
     - shell: bash
       run: |
+        env
         echo '# Hello
         
         ## World
