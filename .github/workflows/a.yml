@@ -1,7 +1,10 @@
 on: push
 
+name: named
+
 jobs:
   first:
+    name: job-name
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
